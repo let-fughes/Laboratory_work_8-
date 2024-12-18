@@ -1,0 +1,396 @@
+body{
+    font-family: cursive;
+    font-size: 18px;
+}
+
+header nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+}
+
+header nav ul{
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+#name{
+    color: white;
+    font-size: 22px;
+    margin-top: -30px;
+    display: block ruby;
+    position: absolute;
+    left: 40%;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+li{
+    color: white;
+    margin-top: 4px;
+    display:inline-block;
+}
+
+#l2{
+    color:white;
+    text-decoration: none;
+    display: block ruby;
+    margin-left: -10%;
+}
+
+body main{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 310px 310px;
+    place-items: center;
+    grid-row-gap: 80px;
+}
+
+#title1{
+    margin: 20px 0;
+    text-align: center;
+}
+
+#photo-1{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 280px;
+    margin-top: 50px;
+}
+
+#text-1{
+    grid-column: 2;
+    grid-row: 1;
+    width: 550px;
+    margin-left: 210px;
+}
+
+#text-2{
+    grid-column: 1;
+    grid-row: 2;
+    width: 550px;
+    margin-left: 430px;
+}
+
+#photo-2{
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 330px;
+    margin-bottom: 80px;
+}
+
+img{
+    width: 384px;
+    height: 294px;
+    margin: 20px;
+}
+
+section div{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 380px;
+    place-items: center;
+    margin-bottom: 150px;
+}
+
+h3{
+    text-align: center;
+}
+
+.inline{
+    width: 300px;
+    height: 415px;
+    background-color: rgb(225, 225, 225);
+    border: 1px solid rgb(236, 232, 232);
+    border-radius: 8px;
+    margin-top: 350px;
+    margin-bottom: 150px;
+}
+
+#l1{
+    color:white;
+    text-decoration: none;
+    display: block ruby;
+    margin-left: -110%;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link:active{
+    color: rgb(23, 23, 23);
+}
+
+#more-1{
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    right: 25%;
+}
+
+#more-2{
+    grid-row: 1;
+    grid-column: 2;
+    position: absolute;
+    left: 25%;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 15  0px;
+    background-color: rgb(225, 225, 225);
+}
+
+#me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sm{
+    margin: 0 20px;
+    margin-bottom: 0px;
+}
+
+.slider {
+    position: relative;
+    width: 90%;
+    margin-left: 60px;
+    max-width: 600px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+#bg{
+    height: 440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: rgb(225, 225, 225);
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide img {
+    width: 80%;
+}
+.active {
+    display: block;
+    opacity: 1;
+    position: static;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+.prev {
+    left: 5px;
+}
+.next {
+    right: 102px;
+}
+
+@media(max-width: 700px){
+    header nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 65px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    header nav ul{
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    #name{
+        color: white;
+        font-size: 22px;
+        margin-top: -30px;
+        position: absolute;
+        left: 25%;
+    }
+
+    #l1{
+        color: white;
+        font-size: -22px;
+        margin-left: 10%;
+    }
+
+    #l2{
+        color: white;
+        font-size: -22px;
+        margin-left: 550%;
+    }
+
+    #bg{
+        height: 340px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        background-color: white;
+    }
+
+    #title{
+        margin-bottom: -30px;
+    }
+
+    .da{
+        display: none;
+    }
+
+    .slider {
+        position: absolute;
+        left: auto;
+        width: 100%;
+        max-width: 700px;
+        overflow: hidden;
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+
+    #slide{
+        width: 100%;
+        height: 600px;
+        background-color: rgb(225, 225, 225);
+    }
+
+    .next {
+        right: 75px;
+    }
+
+    body main{
+        display: grid;
+        grid-template-columns: 40%;
+        grid-template-rows: 310px 310px 310px 310px;
+        place-items: center;
+        grid-row-gap: 50px;
+        margin: 0;
+    }
+
+    #photo-1{
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 310px;
+        margin-top: 115px;
+        margin-bottom: 20px;
+    }
+    
+    #text-1{
+        grid-column: 1;
+        grid-row: 2;
+        width: 350px;
+        margin-left:  180%;
+        margin-top: -10%;
+        margin-bottom: auto;
+    }
+    
+    #text-2{
+        display: none;
+
+    }
+    
+    #photo-2{
+        grid-column: 1;
+        grid-row: 3;
+        margin-left: 320px;
+        margin-top: -7;
+    }
+
+    h3{
+        text-align: center;
+        margin-left: 10px;
+        margin-bottom: -35px;
+    }
+
+    section div{
+        display: grid;
+        grid-template-columns: 40%;
+        grid-template-rows: 380px 430px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    #more-1{
+        grid-row: 1;
+        grid-column: 1;
+        position: absolute;
+        left: 100px;
+        bottom: -1880px;
+    }
+    
+    #more-2{
+        grid-row: 2;
+        grid-column: 1;
+        position: absolute;
+        left:100px;
+        bottom: -2350px;
+    }
+
+    footer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 180px;
+        background-color: rgb(225, 225, 225);
+        margin-top: 140px;
+    }
+    
+    #me{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
