@@ -1,0 +1,9 @@
+AddType application/javascript .js
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+
+# END WordPress
+
+ErrorDocument 404 /index.php?error=404
